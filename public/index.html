@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/letter-m.webp"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Madhav Mehta - Software Dev</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<canvas id="DemoCanvas" width=1440 height=750 style="background-color: #202832; width: 100vw; height: 100vh; position: absolute"></canvas>
+<div id="root"></div>
+<script>
+    let count = 0;
+    let stars = []
+
+    function init() {
+        for(let i = 0; i < 50; i ++) {
+            let obj = {x: Math.random() * 1200 + 200, y: Math.random() * 500, r: Math.random() * 500}
+            console.log(obj)
+            stars.push(obj)
+        }
+        window.requestAnimationFrame(draw);
+    }
+
+    function degrees_to_radians(degrees) {
+        return degrees * (Math.PI/180);
+    }
+
+    function draw() {
+        var ctx = document.getElementById('DemoCanvas').getContext('2d');
+        ctx.clearRect(0, 0, 1440, 750);
+        ctx.save();
+        let r = 100;
+        console.log(stars.length)
+        for(let i = 0; i < stars.length; i ++) {
+            let star = stars[i]
+            ctx.beginPath();
+            let _x = stars[i].x + stars[i].r * Math.sin(-degrees_to_radians(count)), _y = stars[i].y + stars[i].r * Math.cos(-degrees_to_radians(count));
+
+            ctx.moveTo(_x, _y);
+            ctx.lineTo(_x + _y * 0.6 , 0);
+            ctx.fill();
+            ctx.strokeStyle = "lightgrey";
+            ctx.stroke();
+            ctx.moveTo(_x, _y);
+            ctx.beginPath()
+            ctx.arc(_x, _y, 1, 0, 100)
+            ctx.lineWidth = 0.2;
+            if(i % 4 == 0) {
+                ctx.fillStyle = "red"
+            } else if(i % 4 == 1) {
+                ctx.fillStyle = "yellow"
+            } else if(i % 4 == 2){
+                ctx.fillStyle = "green"
+            } else {
+                ctx.fillStyle = "orange"
+            }
+            ctx.fill()
+        }
+        count += 0.05;
+        window.requestAnimationFrame(draw);
+    }
+    init();
+</script>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+</body>
+</html>

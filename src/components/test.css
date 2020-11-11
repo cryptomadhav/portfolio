@@ -1,0 +1,7 @@
+.div {
+    background: aquamarine;
+    align-items: center;
+    align-content: space-around;
+    background-image: linear-gradient(red, yellow);
+    color: lightgrey;
+}
