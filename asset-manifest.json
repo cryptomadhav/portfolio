@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio-2020/static/css/main.fa097a27.chunk.css",
+    "main.js": "/portfolio-2020/static/js/main.0acdfd97.chunk.js",
+    "main.js.map": "/portfolio-2020/static/js/main.0acdfd97.chunk.js.map",
+    "runtime-main.js": "/portfolio-2020/static/js/runtime-main.106eb575.js",
+    "runtime-main.js.map": "/portfolio-2020/static/js/runtime-main.106eb575.js.map",
+    "static/js/2.29f27461.chunk.js": "/portfolio-2020/static/js/2.29f27461.chunk.js",
+    "static/js/2.29f27461.chunk.js.map": "/portfolio-2020/static/js/2.29f27461.chunk.js.map",
+    "index.html": "/portfolio-2020/index.html",
+    "precache-manifest.e57230975ee77c380801bef54a03e8aa.js": "/portfolio-2020/precache-manifest.e57230975ee77c380801bef54a03e8aa.js",
+    "service-worker.js": "/portfolio-2020/service-worker.js",
+    "static/css/main.fa097a27.chunk.css.map": "/portfolio-2020/static/css/main.fa097a27.chunk.css.map",
+    "static/js/2.29f27461.chunk.js.LICENSE.txt": "/portfolio-2020/static/js/2.29f27461.chunk.js.LICENSE.txt",
+    "static/media/SpaceGrotesk-Regular.otf": "/portfolio-2020/static/media/SpaceGrotesk-Regular.53134474.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.106eb575.js",
+    "static/js/2.29f27461.chunk.js",
+    "static/css/main.fa097a27.chunk.css",
+    "static/js/main.0acdfd97.chunk.js"
+  ]
+}
