@@ -18,7 +18,7 @@ const NameBlock = styled.div`
 `
 
 const Info = styled.p`
-    margin-top: 250px;
+    margin-top: 150px;
     margin-bottom: 100px;
     color: white;
     font-size: 1.7rem;
@@ -38,6 +38,9 @@ const Social = styled.div`
 
 const SocialButton = styled.div`
     font-size: 1.2rem;
+`
+const SocialLinkWrapper = styled.a`
+    color: inherit;
 `
 
 export default () => {
@@ -68,15 +71,23 @@ export default () => {
                     I'm a software engineer based in India,
                     <br/>
                     currently working full-time with OYO.
-                    <br/>
-                    Stick around till the end for a short game.
+                    {/* <br/>
+                    Stick around till the end for a short game. */}
                 </Info>
                 <div>
                     <Connect>Let's Connect</Connect>
                     <Social>
-                        <SocialButton>Email</SocialButton>
-                        <SocialButton>Linkedin</SocialButton>
-                        <SocialButton>Github</SocialButton>
+                        <SocialLinkWrapper href ="mailto: madhav.mehta896@gmail.com" target="_blank">
+                            <SocialButton>Email</SocialButton>
+                        </SocialLinkWrapper>
+                        
+                        <SocialLinkWrapper href ="https://www.linkedin.com/in/mmehta896/" target="_blank">
+                            <SocialButton>Linkedin</SocialButton>
+                        </SocialLinkWrapper>
+                        
+                        <SocialLinkWrapper href ="https://github.com/cryptomadhav/" target="_blank">
+                            <SocialButton>Github</SocialButton>
+                        </SocialLinkWrapper>
                     </Social>
                 </div>
             </div>
