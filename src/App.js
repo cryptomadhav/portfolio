@@ -3,7 +3,7 @@ import HeaderSection from "./components/HeaderSection";
 import AboutSection from "./components/AboutSection";
 import Game from "./components/Game";
 
-function App() {
+const App = () => {
     const [activeTab, setActiveTab] = useState(1)
     const handleTabSwitch = (key) => {
         setActiveTab(key)
@@ -11,9 +11,8 @@ function App() {
     return (
         <>
             <HeaderSection/>
-            <Game/>
-
-            <AboutSection/>
+            {/* <Game/>
+            <AboutSection/> */}
         </>
     );
 }
