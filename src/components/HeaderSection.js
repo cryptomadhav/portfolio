@@ -81,11 +81,11 @@ export default () => {
                             <SocialButton>Email</SocialButton>
                         </SocialLinkWrapper>
                         
-                        <SocialLinkWrapper href ="https://bit.ly/38DxIq5" target="_blank">
+                        <SocialLinkWrapper href ="https://bit.ly/madhav-linkedin" target="_blank">
                             <SocialButton>Linkedin</SocialButton>
                         </SocialLinkWrapper>
                         
-                        <SocialLinkWrapper href ="https://bit.ly/3lwYpjV" target="_blank">
+                        <SocialLinkWrapper href ="https://bit.ly/madhav-github" target="_blank">
                             <SocialButton>Github</SocialButton>
                         </SocialLinkWrapper>
                     </Social>
