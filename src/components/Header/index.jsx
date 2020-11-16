@@ -1,20 +1,24 @@
 import React, { useState } from 'react'
-import {HeaderBg, HeaderOverlay, NameBlock, Info, Connect, Social, SocialLinkWrapper, SocialButton} from './styles'
+import { isMobile } from '../../utils/miscUtils'
+import { HeaderBg, HeaderOverlay, NameBlock, Info, Connect, Social, SocialLinkWrapper, SocialButton } from './styles'
 
 const Header = () => {
     const [x, setX] = useState(0)
     const [y, setY] = useState(0)
-    const currentIndex = (e) => {
-        return { x: e.clientX, y: e.clientY }
+    const currentIndex = e => {
+        return { x: -e.clientX, y: -e.clientY }
+    }
+    const handleMouseMove = event => {
+        if (isMobile()) {
+            return;
+        }
+        const data = currentIndex(event);
+        setX(data.x / 60);
+        setY(data.y / 30);
     }
     return (
-        <HeaderBg onMouseMove={event => {
-            const data = currentIndex(event);
-            setX(data.x / 60);
-            setY(data.y / 30);
-        }}
-        >
-            <HeaderOverlay x={-x} y={-y}>
+        <HeaderBg onMouseMove={handleMouseMove}>
+            <HeaderOverlay x={x} y={y}>
                 <NameBlock>
                     <div style={{
                         fontWeight: '700',

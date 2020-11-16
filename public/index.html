@@ -37,7 +37,6 @@
     function init() {
         for(let i = 0; i < 50; i ++) {
             let obj = {x: Math.random() * 1200 + 200, y: Math.random() * 500, r: Math.random() * 500}
-            console.log(obj)
             stars.push(obj)
         }
         window.requestAnimationFrame(draw);
@@ -52,7 +51,6 @@
         ctx.clearRect(0, 0, 1440, 750);
         ctx.save();
         let r = 100;
-        console.log(stars.length)
         for(let i = 0; i < stars.length; i ++) {
             let star = stars[i]
             ctx.beginPath();
