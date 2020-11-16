@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import HeaderSection from "./components/HeaderSection";
+import HeaderSection from "./components/Header";
 import AboutSection from "./components/AboutSection";
 import Game from "./components/Game";
 

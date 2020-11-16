@@ -1,52 +1,7 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
+import {HeaderBg, HeaderOverlay, NameBlock, Info, Connect, Social, SocialLinkWrapper, SocialButton} from './styles'
 
-const HeaderBg = styled.div`
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    font-family: Space Grotesk;
-    line-height: 1.5;
-    text-align: left;
-    color: white;
-`
-const HeaderOverlay = styled.div`
-    padding: 100px;
-    padding-top: 80px;
-    transform: ${({x, y}) => `translate(${x}px, ${y}px)`};
-    @media only screen and (max-width: 600px) {
-        padding: 40px;
-    }
-`
-const NameBlock = styled.div`
-    color: white;
-    font-size: 1.2rem;
-`
-const Info = styled.p`
-    margin-top: 150px;
-    margin-bottom: 100px;
-    color: white;
-    font-size: 1.7rem;
-`
-const Connect = styled.div`
-    font-size: 1.4rem;
-    font-weight: 700;
-`
-const Social = styled.div`
-    width: 200px;
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-between;
-`
-const SocialButton = styled.div`
-    font-size: 1.2rem;
-`
-const SocialLinkWrapper = styled.a`
-    color: inherit;
-`
-
-export default () => {
+const Header = () => {
     const [x, setX] = useState(0)
     const [y, setY] = useState(0)
     const currentIndex = (e) => {
@@ -97,3 +52,5 @@ export default () => {
         </HeaderBg>
     )
 }
+
+export default Header;
