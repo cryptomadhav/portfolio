@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-2020/static/css/main.13c5f836.chunk.css",
-    "main.js": "/portfolio-2020/static/js/main.8f3000dc.chunk.js",
-    "main.js.map": "/portfolio-2020/static/js/main.8f3000dc.chunk.js.map",
-    "runtime-main.js": "/portfolio-2020/static/js/runtime-main.106eb575.js",
-    "runtime-main.js.map": "/portfolio-2020/static/js/runtime-main.106eb575.js.map",
-    "static/js/2.29f27461.chunk.js": "/portfolio-2020/static/js/2.29f27461.chunk.js",
-    "static/js/2.29f27461.chunk.js.map": "/portfolio-2020/static/js/2.29f27461.chunk.js.map",
-    "index.html": "/portfolio-2020/index.html",
-    "precache-manifest.5fb1b5788122aefcd0506c2dddc6b93c.js": "/portfolio-2020/precache-manifest.5fb1b5788122aefcd0506c2dddc6b93c.js",
-    "service-worker.js": "/portfolio-2020/service-worker.js",
-    "static/css/main.13c5f836.chunk.css.map": "/portfolio-2020/static/css/main.13c5f836.chunk.css.map",
-    "static/js/2.29f27461.chunk.js.LICENSE.txt": "/portfolio-2020/static/js/2.29f27461.chunk.js.LICENSE.txt",
-    "static/media/SpaceGrotesk-Regular.otf": "/portfolio-2020/static/media/SpaceGrotesk-Regular.53134474.otf",
-    "static/media/index.css": "/portfolio-2020/static/media/shuttle.0ad62264.svg"
+    "main.css": "/portfolio/static/css/main.541d0799.chunk.css",
+    "main.js": "/portfolio/static/js/main.753c730c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.753c730c.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.4814ba0d.chunk.js": "/portfolio/static/js/2.4814ba0d.chunk.js",
+    "static/js/2.4814ba0d.chunk.js.map": "/portfolio/static/js/2.4814ba0d.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.0f6ae945e8dd4cb15796f7a523a5c45b.js": "/portfolio/precache-manifest.0f6ae945e8dd4cb15796f7a523a5c45b.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.541d0799.chunk.css.map": "/portfolio/static/css/main.541d0799.chunk.css.map",
+    "static/js/2.4814ba0d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4814ba0d.chunk.js.LICENSE.txt",
+    "static/media/SpaceGrotesk-Regular.otf": "/portfolio/static/media/SpaceGrotesk-Regular.53134474.otf",
+    "static/media/index.css": "/portfolio/static/media/shuttle.0ad62264.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.106eb575.js",
-    "static/js/2.29f27461.chunk.js",
-    "static/css/main.13c5f836.chunk.css",
-    "static/js/main.8f3000dc.chunk.js"
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.4814ba0d.chunk.js",
+    "static/css/main.541d0799.chunk.css",
+    "static/js/main.753c730c.chunk.js"
   ]
 }
