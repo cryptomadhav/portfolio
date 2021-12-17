@@ -1,6 +1,6 @@
 {
-  "homepage": "http://cryptomadhav.github.io/portfolio-2020",
-  "name": "portfolio-2020",
+  "homepage": "http://cryptomadhav.github.io/portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
