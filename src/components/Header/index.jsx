@@ -5,16 +5,12 @@ import { HeaderBg, HeaderOverlay, NameBlock, Info, Connect, Social, SocialLinkWr
 const Header = () => {
     const [x, setX] = useState(0)
     const [y, setY] = useState(0)
-    const currentIndex = e => {
-        return { x: -e.clientX, y: -e.clientY }
-    }
     const handleMouseMove = event => {
         if (isMobile()) {
             return;
         }
-        const data = currentIndex(event);
-        setX(data.x / 60);
-        setY(data.y / 30);
+        setX(-event.clientX / 60);
+        setY(-event.clientY / 30);
     }
     return (
         <HeaderBg onMouseMove={handleMouseMove}>
@@ -32,7 +28,7 @@ const Header = () => {
                 <Info>
                     I'm a software engineer based in India,
                     <br />
-                    currently working full-time with OYO.
+                    currently working full-time with Amazon.
                     {/* <br/>
                     Stick around till the end for a short game. */}
                 </Info>
